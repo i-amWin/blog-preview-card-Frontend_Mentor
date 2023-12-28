@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Blog preview card</title>
+
+    <!-- import local font -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/tailwindcss">
+      :root {
+        --yellow: hsl(47, 88%, 63%);
+        --grey: hsl(0, 0%, 50%);
+        --black: hsl(0, 0%, 7%);
+      }
+
+      body {
+        font-family: "Figtree", sans-serif;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body
+    class="min-h-[100svh] bg-[hsl(47,88%,63%)] flex justify-center items-center px-4"
+  >
+    <div
+      class="bg-white p-4 border-black border-2 rounded-2xl space-y-4 max-w-[22rem]"
+    >
+      <div class="rounded-xl overflow-hidden">
+        <img
+          src="./assets/images/illustration-article.svg"
+          alt=""
+          class="w-full"
+        />
+      </div>
+      <div class="space-y-4">
+        <p class="bg-[--yellow] w-fit px-4 rounded py-1 font-semibold">
+          Learning
+        </p>
+        <p class="font-medium">Published 21 Dec 2023</p>
+
+        <h3
+          class="font-extrabold text-2xl hover:text-[--yellow] transition-colors"
+        >
+          HTML & CSS foundations
+        </h3>
+
+        <p class="text-[--grey]">
+          These languages are the backbone of every website, defining structure,
+          content, and presentation.
+        </p>
+
+        <div class="flex items-center gap-4 pt-2">
+          <img
+            src="./assets/images/image-avatar.webp"
+            class="size-10"
+            alt="Greg Hooper"
+          />
+          <p class="font-extrabold">Greg Hooper</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution absolute bottom-4">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        class="hover:underline"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/i-amWin" class="hover:underline"
+        >Jeet Gangwar</a
+      >.
+    </div>
+  </body>
+</html>
